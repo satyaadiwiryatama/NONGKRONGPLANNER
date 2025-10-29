@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body dan layout dasar */
+body {
+  background-color: #f8eed3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #602d2d;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+/* Ubah bagian logo agar tidak ada lingkaran */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  display: none; /* sembunyikan lingkaran */
+}
+
+/* Ubah ukuran font tulisan NongkrongPlanner */
+.logo-section h1 {
+  font-size: 27px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Kotak Login */
+.login-box {
+  background-color: #f8eed3;
+  border: 2px solid #0b7e7e;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  width: 330px;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  border: 2px solid #0b7e7e;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-box input:focus {
+  border-color: #602d2d;
+}
+
+/* Options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.options a {
+  text-decoration: none;
+  color: #602d2d;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Tombol Login */
+button {
+  background-color: #d68648;
+  color: black;
+  border: 2px solid #602d2d;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c6733d;
+}
+
+/* Register link */
+.register-exit {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.register-exit a {
+  color: #602d2d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #f8eed3;
+  color: #602d2d;
+  padding: 15px 30px;
+  border-top: 2px solid #0b7e7e;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links a {
+  color: #602d2d;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-right p {
+  font-size: 14px;
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
